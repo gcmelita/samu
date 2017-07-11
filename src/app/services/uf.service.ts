@@ -8,4 +8,12 @@ export class UFService {
   getAll(): UF[] {
     return UFs;
   }
+  buscarUF(id:number): UF{
+    let uf: UF;
+      for (let entry of UFs){
+        if (entry.id == id){
+          return entry;
+        }
+      }
+  }
 }
