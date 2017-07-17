@@ -28,16 +28,24 @@ export class SamuService {
     let uf: UF;
     let soma = 0;
     let qtd = 0;
+<<<<<<< HEAD
     for (let entry of VALORES){
       if(entry.uf_id === id)
       {
         soma += entry.valor;
+=======
+    for (let entrada of VALORES){
+      if(entrada.uf_id === id)
+      {
+        soma += entrada.valor;
+>>>>>>> 0aba92ba34c20876f481dcdc5e5dc135b1138129
         qtd++;
       }
     }
     return Math.round(soma/qtd);
   }
 
+<<<<<<< HEAD
   getPorUFMunicipiosAtendidosPorEstado(uf:UF): Dados[]{
     let dados: Dados[] = [];
     let i = 0;
@@ -51,4 +59,6 @@ export class SamuService {
     return dados;
   }
 
+=======
+>>>>>>> 0aba92ba34c20876f481dcdc5e5dc135b1138129
 }
