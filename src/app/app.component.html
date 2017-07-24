@@ -1,17 +1,7 @@
 <!--The whole content below can be removed with the new code.-->
 <div style="text-align:center" class="title">
-  <h1>{{uf.nome}}</h1>
-<<<<<<< HEAD
   <a routerLink="/resumo">Resumo</a>
   <a routerLink="/dadosDaUF">Dados da UF</a>
   <a routerLink="/todosOsDados">Todos os dados</a>
-=======
-  <h3>{{uf.id}}</h3>
-  <h2>{{uf.area}} km²</h2>
-  <li *ngFor = "let dado of dados">
-    <span>{{dado.ano}} {{dado.valor}}</span>
-  </li>
-  <h2>Média = {{media}}</h2>
->>>>>>> 0aba92ba34c20876f481dcdc5e5dc135b1138129
 </div>
 <router-outlet></router-outlet>
